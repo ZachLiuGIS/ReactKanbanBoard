@@ -6,7 +6,6 @@ var webpack = require('webpack');
 var webpackStream = require('webpack-stream');
 var reload = require('gulp-hot-reload');
 
-var serverConfig = require('./webpack.server.config.js');
 var frontendConfig = require('./webpack.config.js');
 
 var production = args.production ? true : false;

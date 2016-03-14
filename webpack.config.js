@@ -15,5 +15,12 @@ module.exports = {
             loaders: ['babel'],
             exclude: /node_modules/
         }]
+    },
+    devServer: {
+        contentBase: "./dist",
+        colors: true,
+        historyApiFallback: true,
+        inline: true,
+        port: 8888
     }
 };

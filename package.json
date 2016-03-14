@@ -4,7 +4,7 @@
   "description": "An React KanbanBoard Demo project based on the book Pro React",
   "main": "src/main.js",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --progress --hot --colors --port 8888 --content-base dist",
+    "start": "node_modules/.bin/webpack-dev-server --progress",
     "build": "NODE_ENV=production node_modules/.bin/webpack -p --progress --colors"
   },
   "repository": {
@@ -52,8 +52,12 @@
     "yargs": "^4.2.0"
   },
   "dependencies": {
+    "babel-polyfill": "^6.7.2",
     "express": "^4.13.4",
+    "marked": "^0.3.5",
     "react": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react-addons-update": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "whatwg-fetch": "^0.11.0"
   }
 }

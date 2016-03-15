@@ -3,6 +3,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import CheckList from './CheckList';
 import marked from 'marked';
 import { DragSource, DropTarget } from 'react-dnd';
+import { Link } from 'react-router';
 import constants from '../constants/constants';
 
 let titlePropType = (props, propName, componentName) => {
@@ -91,6 +92,7 @@ class Card extends Component {
         return connectDropTarget(connectDragSource(
             <div className="card">
                 <div style={sideColor}/>
+                <div className="card_edit"><Link to={"/edit/" + this.props.id}>&#9998;</Link></div>
                 <div className={this.state.showDetails? "card_title card_title--is-open" : "card_title"}
                      onClick={this.toggleDetails.bind(this)}>{this.props.title}
                 </div>

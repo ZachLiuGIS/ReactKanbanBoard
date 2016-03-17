@@ -7,7 +7,6 @@ import KanbanBoard from './components/KanbanBoard';
 import NewCard from './components/NewCard';
 import EditCard from './components/EditCard';
 
-//import { cardsList } from './data/cardList';
 const root = document.getElementById('root');
 
 class Routes extends Component {
